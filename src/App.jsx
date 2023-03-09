@@ -23,7 +23,6 @@ function App() {
     axios
     .get(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=1cca7024d5326e6bbb4d399fc9de7608`)
     .then((resp) => {
-      console.log(resp.data)
       setWeatherData(resp.data)})
     .catch((error) => console.error(error))
   }
@@ -38,7 +37,6 @@ function App() {
     axios
     .get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1cca7024d5326e6bbb4d399fc9de7608`)
     .then((resp) => {
-      console.log(resp.data)
       setWeatherData(resp.data)})
     .catch((error) => console.error(error))
   }
