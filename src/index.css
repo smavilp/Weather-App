@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: radial-gradient(circle,var(--background_color1) 0%, var(--background_color2) 100%);
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+@media screen and (min-width:700px) {
+  body{
+    justify-content: stretch;
+  }
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}
